@@ -1,4 +1,4 @@
-import { Page } from "@/components/ImagePage";
+import { Page } from "@/components/ImageConversationPage";
 
 const Image = () => {
     return (    

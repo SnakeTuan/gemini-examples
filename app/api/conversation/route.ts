@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
         const gemini = new Gemini_Client();
 
         // Generate a response using Gemini
-        const response = await gemini.generateContent(prompt);
+        const response = await gemini.generateQuickConversation(prompt);
 
         return NextResponse.json({ response });
     } catch (error: any) {

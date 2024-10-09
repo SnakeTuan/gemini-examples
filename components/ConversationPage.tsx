@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
+import ReactMarkdown from 'react-markdown'
 
 export function Page() {
   const [prompt_input, setPromptInput] = useState('')
@@ -65,7 +66,7 @@ export function Page() {
       {/* show response if there is one */}
       {response && (
         <div className="mt-4 p-4 bg-gray-100 rounded">
-          <p>{response}</p>
+          <ReactMarkdown>{response}</ReactMarkdown>
         </div>
       )}
     </div>
